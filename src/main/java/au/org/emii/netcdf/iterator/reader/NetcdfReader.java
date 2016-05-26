@@ -1,13 +1,12 @@
-package au.org.emii.talend.dap.reader;
+package au.org.emii.netcdf.iterator.reader;
 
 import java.io.IOException;
 import java.util.Set;
 
-import au.org.emii.talend.dap.IndexRange;
-import au.org.emii.talend.dap.IndexRangesBuilder;
-import au.org.emii.talend.dap.IndexValue;
-import au.org.emii.talend.dap.IndexValuesConverter;
-
+import au.org.emii.netcdf.iterator.IndexRange;
+import au.org.emii.netcdf.iterator.IndexRangesBuilder;
+import au.org.emii.netcdf.iterator.IndexValue;
+import au.org.emii.netcdf.iterator.IndexValuesConverter;
 import ucar.ma2.Array;
 import ucar.ma2.ArrayChar;
 import ucar.ma2.Index;

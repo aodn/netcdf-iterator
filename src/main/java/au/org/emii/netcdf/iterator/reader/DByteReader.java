@@ -1,9 +1,9 @@
-package au.org.emii.talend.dap.reader;
+package au.org.emii.netcdf.iterator.reader;
 
 import java.util.Set;
 
 import opendap.dap.DByte;
-import au.org.emii.talend.dap.IndexValue;
+import au.org.emii.netcdf.iterator.IndexValue;
 
 public class DByteReader extends DReader {
     private DByte variable;

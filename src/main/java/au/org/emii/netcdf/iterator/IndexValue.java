@@ -1,4 +1,4 @@
-package au.org.emii.talend.dap;
+package au.org.emii.netcdf.iterator;
 
 // Class used to encapsulate the value of an index
 

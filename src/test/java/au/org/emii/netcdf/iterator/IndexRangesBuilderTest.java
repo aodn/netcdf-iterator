@@ -1,4 +1,4 @@
-package au.org.emii.talend.dap;
+package au.org.emii.netcdf.iterator;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
@@ -10,6 +10,8 @@ import java.util.Set;
 import org.junit.Before;
 import org.junit.Test;
 
+import au.org.emii.netcdf.iterator.IndexRange;
+import au.org.emii.netcdf.iterator.IndexRangesBuilder;
 import ucar.ma2.DataType;
 import ucar.nc2.Dimension;
 import ucar.nc2.NetcdfFileWriter;

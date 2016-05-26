@@ -1,8 +1,8 @@
-package au.org.emii.talend.dap.reader;
+package au.org.emii.netcdf.iterator.reader;
 
 import java.util.Set;
 
-import au.org.emii.talend.dap.IndexValue;
+import au.org.emii.netcdf.iterator.IndexValue;
 
 public class DReader {
     public byte getByte(Set<IndexValue> indexValues) {

@@ -1,4 +1,4 @@
-package au.org.emii.talend.dap;
+package au.org.emii.netcdf.iterator;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
@@ -16,8 +16,9 @@ import ucar.ma2.DataType;
 import ucar.nc2.Dimension;
 import ucar.nc2.NetcdfFileWriter;
 import ucar.nc2.Variable;
-import au.org.emii.talend.dap.reader.NetcdfReader;
-import au.org.emii.talend.dap.utils.FileUtils;
+import au.org.emii.netcdf.iterator.IndexValue;
+import au.org.emii.netcdf.iterator.reader.NetcdfReader;
+import au.org.emii.netcdf.iterator.utils.FileUtils;
 
 public class NetcdfReaderTests {
     

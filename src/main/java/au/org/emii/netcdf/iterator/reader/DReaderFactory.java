@@ -1,4 +1,4 @@
-package au.org.emii.talend.dap.reader;
+package au.org.emii.netcdf.iterator.reader;
 
 import opendap.dap.BaseType;
 import opendap.dap.DArray;

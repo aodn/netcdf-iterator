@@ -1,4 +1,4 @@
-package au.org.emii.talend.dap.reader;
+package au.org.emii.netcdf.iterator.reader;
 
 import java.util.Set;
 
@@ -11,10 +11,10 @@ import opendap.dap.Float64PrimitiveVector;
 import opendap.dap.Int16PrimitiveVector;
 import opendap.dap.Int32PrimitiveVector;
 import opendap.dap.PrimitiveVector;
-import au.org.emii.talend.dap.IndexRange;
-import au.org.emii.talend.dap.IndexRangesBuilder;
-import au.org.emii.talend.dap.IndexValue;
-import au.org.emii.talend.dap.IndexValuesConverter;
+import au.org.emii.netcdf.iterator.IndexRange;
+import au.org.emii.netcdf.iterator.IndexRangesBuilder;
+import au.org.emii.netcdf.iterator.IndexValue;
+import au.org.emii.netcdf.iterator.IndexValuesConverter;
 
 public class DArrayReader extends DReader {
     private PrimitiveVector primitiveVector;

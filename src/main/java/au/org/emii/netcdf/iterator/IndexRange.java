@@ -1,4 +1,4 @@
-package au.org.emii.talend.dap;
+package au.org.emii.netcdf.iterator;
 
 import opendap.dap.DArrayDimension;
 import ucar.nc2.Dimension;

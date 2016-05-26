@@ -1,9 +1,9 @@
-package au.org.emii.talend.dap.reader;
+package au.org.emii.netcdf.iterator.reader;
 
 import java.util.Set;
 
 import opendap.dap.DFloat64;
-import au.org.emii.talend.dap.IndexValue;
+import au.org.emii.netcdf.iterator.IndexValue;
 
 public class DFloat64Reader extends DReader {
     private DFloat64 variable;
