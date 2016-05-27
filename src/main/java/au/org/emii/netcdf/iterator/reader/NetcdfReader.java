@@ -11,6 +11,7 @@ import ucar.ma2.Array;
 import ucar.ma2.ArrayChar;
 import ucar.ma2.Index;
 import ucar.nc2.Variable;
+import ucar.nc2.dataset.EnhanceScaleMissing;
 
 public class NetcdfReader {
 
@@ -18,8 +19,11 @@ public class NetcdfReader {
     
     private IndexValuesConverter indexValuesConverter;
     private Index index;
+    private final Variable variable;
 
     public NetcdfReader(Variable variable) throws IOException {
+        this.variable = variable;
+
         data = variable.read();
         
         IndexRangesBuilder indexRangesBuilder = new IndexRangesBuilder();
@@ -76,4 +80,13 @@ public class NetcdfReader {
         }
     }
 
+    public String getDisplayValue(Set<IndexValue> indexValues) {
+        EnhanceScaleMissing scaleMissingDecorator = (EnhanceScaleMissing) variable;
+
+        if (scaleMissingDecorator.hasMissing() && scaleMissingDecorator.isMissing(getDouble(indexValues))) {
+            return "";
+        } else {
+            return getString(indexValues);
+        }
+    }
 }
