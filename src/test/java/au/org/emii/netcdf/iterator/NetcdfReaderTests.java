@@ -32,14 +32,14 @@ public class NetcdfReaderTests {
         "PRES"
     };
 
-    private static final String[] ABOS_QC_TEST_DATA = {
+    private static final String[] DWM_QC_TEST_DATA = {
         "0",
         "1",
         "2",
         "3"
     };
     
-    private static final String ABOS_STATION_NAME_TEST_DATA = "Pulse-Pulse-9-2012";
+    private static final String DWM_STATION_NAME_TEST_DATA = "Pulse-Pulse-9-2012";
 
     @Test
     public void argoQCTest() throws IOException {
@@ -52,13 +52,13 @@ public class NetcdfReaderTests {
     }
 
     @Test
-    public void abosQCTest() throws IOException {
-        test2DGetCharAndGetString(ABOS_QC_TEST_DATA);
+    public void dwmQCTest() throws IOException {
+        test2DGetCharAndGetString(DWM_QC_TEST_DATA);
     }
     
     @Test
-    public void abosStationNameTest() throws IOException {
-        test1DGetCharAndGetString(ABOS_STATION_NAME_TEST_DATA);
+    public void dwmStationNameTest() throws IOException {
+        test1DGetCharAndGetString(DWM_STATION_NAME_TEST_DATA);
     }
 
     private void test2DGetCharAndGetString(String[] data) throws IOException {
