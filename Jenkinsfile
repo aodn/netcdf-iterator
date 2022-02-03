@@ -26,7 +26,7 @@ pipeline {
     post {
         success {
             dir('target/') {
-                archiveArtifacts artifacts: 'target/netcdf-iterator-*-SNAPSHOT.jar', fingerprint: true, onlyIfSuccessful: true
+                archiveArtifacts artifacts: 'netcdf-iterator-*-SNAPSHOT.jar', fingerprint: true, onlyIfSuccessful: true
             }
         }
     }
