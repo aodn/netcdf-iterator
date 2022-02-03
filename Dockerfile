@@ -1,7 +1,9 @@
-FROM ubuntu:16.04
+FROM ubuntu:latest
 
 ARG BUILDER_UID=9999
+ARG DEBIAN_FRONTEND=noninteractive
 
+ENV TZ=Australia/Hobart
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
 ENV JAVA_TOOL_OPTIONS -Duser.home=/home/builder
 ENV PATH /home/builder/.local/bin:$PATH
